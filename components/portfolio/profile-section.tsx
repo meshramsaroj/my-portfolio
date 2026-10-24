@@ -3,6 +3,7 @@ import Link from "next/link";
 import {
   ArrowDownRight,
   ArrowUpRight,
+  Download,
   Mail,
   Phone,
 } from "lucide-react";
@@ -56,6 +57,24 @@ export default function ProfileSection() {
                   sizes="(max-width: 1024px) 80vw, 40vw"
                   className="object-cover object-[center_25%]"
                 />
+              </div>
+            </div>
+
+            <div className="mt-5 flex flex-col items-center gap-3">
+              <span className="rounded-full border border-slate-700 bg-white px-4 py-2 text-sm font-semibold text-slate-800">
+                Senior Software Engineer
+              </span>
+              <div className="flex flex-wrap justify-center gap-2">
+                {["React.js", "Next.js", "TypeScript", "Node.js", "Express.js"].map(
+                  (technology) => (
+                    <span
+                      key={technology}
+                      className="rounded-full border border-slate-700 bg-white px-3 py-1.5 text-xs font-medium text-slate-800 sm:text-sm"
+                    >
+                      {technology}
+                    </span>
+                  ),
+                )}
               </div>
             </div>
 
@@ -144,13 +163,6 @@ export default function ProfileSection() {
               writing code, I value clean code, collaborative problem-solving,
               code reviews, and sharing knowledge with fellow developers.
             </p>
-            {/* <p>
-              <strong className="font-semibold text-slate-950">
-                My goal is simple:
-              </strong>{" "}
-              to build impactful software, keep learning, and turn challenging
-              ideas into elegant solutions.
-            </p> */}
           </div>
 
           <div className="mt-7 flex flex-wrap items-center gap-3">
@@ -174,6 +186,14 @@ export default function ProfileSection() {
               Explore my work
               <ArrowDownRight className="transition-transform group-hover:translate-x-0.5 group-hover:translate-y-0.5" />
             </SectionButton>
+            <a
+              href="/Saroj_Meshram_Resume_React_Node.pdf"
+              download
+              className="group inline-flex h-11 items-center gap-2 rounded-full border border-slate-800 bg-slate-800 px-5 text-sm font-medium text-white transition-colors hover:border-slate-800 hover:bg-white hover:text-slate-800"
+            >
+              Download resume
+              <Download className="size-4 transition-transform group-hover:translate-y-0.5" />
+            </a>
           </div>
         </Reveal>
       </div>

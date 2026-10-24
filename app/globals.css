@@ -35,8 +35,36 @@
   content: "";
 }
 
+.assistant-launcher-border {
+  position: relative;
+  isolation: isolate;
+  display: inline-flex;
+  overflow: hidden;
+  border-radius: 9999px;
+  padding: 2px;
+}
+
+.assistant-launcher-border::before {
+  position: absolute;
+  z-index: 0;
+  inset: -100%;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg 210deg,
+    #a855f7 230deg,
+    #ec4899 260deg,
+    #facc15 290deg,
+    #38bdf8 320deg,
+    #c084fc 345deg,
+    transparent 360deg
+  );
+  animation: skill-border-spin 3s linear infinite;
+  content: "";
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .skill-badge-border::before {
+  .skill-badge-border::before,
+  .assistant-launcher-border::before {
     animation: none;
   }
 }

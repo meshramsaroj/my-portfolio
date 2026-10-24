@@ -10,13 +10,40 @@ export const socialMediaLinks = [
 
 ]
 
-export const contactDetails =[
+export const contactDetails = [
     {
         name: "Email",
         value: "sarojmeshram1911@gmail.com"
     },
     {
         name: "Contact No",
-        value: "9168943170/ 9284314534"
+        value: " 9284314534"
     }
+]
+
+export const additionalData = [
+    {
+        name: "Last CTC",
+        value: "20LPA"
+    },
+    {
+        name: "Expected CTC",
+        value: "26 LPA"
+    },
+    {
+        name: "Current location",
+        value: "Pune"
+    },
+    {
+        name: "Prefered location",
+        value: "Pune, Mumbai, Bengaluru, Ahmedabad, Nagpur, anywhere in India, or remote",
+    },
+    {
+        name: "React Experience",
+        value: "6.5 Years"
+    },
+    {
+        name: "Node.js/Express.js Experience",
+        value: "4 Years"
+    },
 ]
