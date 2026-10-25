@@ -188,6 +188,8 @@
   }
   body {
     @apply bg-background text-foreground;
+    overflow-wrap: normal;
+    word-break: normal;
   }
   html {
     @apply font-sans;

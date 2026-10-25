@@ -34,7 +34,7 @@ export const projects = [
   },
   {
     title: "Rawlings – Sports Apparel Customization Platform",
-    url: "https://integrationdesigner.artifi.net",
+    url: "https://integrationdesigner.artifi.net/Designer?personalization=cHJvZHVjdENvZGU9TUNUSkBAJndlYnNpdGVpZD01NTQmdXNlcklkPTYxNCZpc0d1ZXN0PWZhbHNlJndlYkFwaWNsaWVudEtleT00NDllNjZmYy0zMTFmLTRhNjMtYTVmOC1kY2NmMDY2NGRiNTA",
     description:
       "Built an interactive sports apparel customization application that allows users to personalize products by selecting fabrics, styles, colors, and patterns with real-time design previews. Developed responsive UI components, product configuration workflows, and backend integrations to support customization.",
     technologies: [

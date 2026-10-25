@@ -4,6 +4,7 @@ import { motion, useReducedMotion } from "framer-motion";
 
 const heading =
   "Hey, I'm a Senior Software Engineer who loves turning ideas into meaningful digital experiences.";
+const words = heading.split(" ");
 
 const headingVariants = {
   hidden: {},
@@ -30,15 +31,22 @@ export default function TypewriterHeading() {
       animate={reducedMotion ? undefined : "visible"}
       className="text-3xl font-semibold leading-tight tracking-tight text-slate-950 sm:text-4xl"
     >
-      {heading.split("").map((character, index) => (
-        <motion.span
-          key={`${character}-${index}`}
-          aria-hidden="true"
-          variants={characterVariants}
-          className="inline-block whitespace-pre"
-        >
-          {character}
-        </motion.span>
+      {words.map((word, wordIndex) => (
+        <span key={`${word}-${wordIndex}`}>
+          <span className="inline-block whitespace-nowrap">
+            {word.split("").map((character, characterIndex) => (
+              <motion.span
+                key={`${character}-${characterIndex}`}
+                aria-hidden="true"
+                variants={characterVariants}
+                className="inline-block"
+              >
+                {character}
+              </motion.span>
+            ))}
+          </span>
+          {wordIndex < words.length - 1 ? " " : null}
+        </span>
       ))}
       <motion.span
         aria-hidden="true"

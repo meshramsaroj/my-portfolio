@@ -47,21 +47,21 @@ export default function ProfileSection() {
       <div className="mx-auto grid max-w-6xl items-center gap-12 py-16 sm:py-20 lg:grid-cols-2 lg:gap-16 lg:py-24">
         <Reveal className="mx-auto w-full max-w-md lg:max-w-none">
           <div>
-            <div className="relative mx-auto aspect-square w-full max-w-[28rem] rounded-full bg-slate-100 p-3 sm:p-4">
+            <div className="relative mx-auto aspect-square w-36 rounded-full bg-slate-100 p-3 sm:w-56 sm:p-4 md:w-64 lg:w-full lg:max-w-[28rem]">
               <div className="relative size-full overflow-hidden rounded-full border border-slate-200 bg-slate-200">
                 <Image
                   src="/profile-image.jpg"
                   alt="Portrait of Saroj Meshram, senior software engineer"
                   fill
                   priority
-                  sizes="(max-width: 1024px) 80vw, 40vw"
+                  sizes="(max-width: 639px) 144px, (max-width: 767px) 224px, (max-width: 1023px) 256px, 448px"
                   className="object-cover object-[center_25%]"
                 />
               </div>
             </div>
 
             <div className="mt-5 flex flex-col items-center gap-3">
-              <span className="rounded-full border border-slate-700 bg-white px-4 py-2 text-sm font-semibold text-slate-800">
+              <span className="text-lg font-bold text-slate-900 sm:text-xl">
                 Senior Software Engineer
               </span>
               <div className="flex flex-wrap justify-center gap-2">
@@ -108,7 +108,7 @@ export default function ProfileSection() {
                       className="inline-flex max-w-full items-center gap-2 rounded-full border border-slate-800 bg-slate-800 px-4 py-2.5 text-xs font-medium text-white transition-colors hover:border-slate-800 hover:bg-white hover:text-slate-800 sm:text-sm"
                     >
                       <Mail className="size-4 shrink-0" aria-hidden="true" />
-                      <span className="break-all">{detail.value}</span>
+                      <span>{detail.value}</span>
                     </span>
                   );
                 }
