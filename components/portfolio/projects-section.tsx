@@ -2,6 +2,7 @@ import { ArrowUpRight } from "lucide-react";
 import { projects } from "@/app/data/projects";
 import Reveal from "./reveal";
 import SectionHeading from "./section-heading";
+import { SocialIcon } from "./profile-section";
 
 export default function ProjectsSection() {
   return (
@@ -29,15 +30,28 @@ export default function ProjectsSection() {
                   <h3 className="text-2xl font-semibold tracking-tight transition-colors">
                     {project.title}
                   </h3>
-                  <a
-                    href={project.url}
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label={`Visit ${project.title}`}
-                    className="flex size-9 shrink-0 items-center justify-center rounded-full border border-slate-500 text-slate-700 transition-colors group-hover:border-slate-400 group-hover:text-white hover:border-white hover:bg-white hover:text-slate-950"
-                  >
-                    <ArrowUpRight className="size-4" />
-                  </a>
+                  <div className="flex shrink-0 gap-2">
+                    {project.githubUrl && (
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label={`View ${project.title} on GitHub`}
+                        className="flex size-9 items-center justify-center rounded-full border border-slate-500 text-slate-700 transition-colors group-hover:border-slate-400 group-hover:text-white hover:border-white hover:bg-white hover:text-slate-950"
+                      >
+                         <SocialIcon name={""} />
+                      </a>
+                    )}
+                    <a
+                      href={project.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={`Visit ${project.title}`}
+                      className="flex size-9 items-center justify-center rounded-full border border-slate-500 text-slate-700 transition-colors group-hover:border-slate-400 group-hover:text-white hover:border-white hover:bg-white hover:text-slate-950"
+                    >
+                      <ArrowUpRight className="size-4" aria-hidden="true" />
+                    </a>
+                  </div>
                 </div>
 
                 <p className="mt-3 flex-1 text-sm leading-7 text-slate-600 transition-colors group-hover:text-slate-200">

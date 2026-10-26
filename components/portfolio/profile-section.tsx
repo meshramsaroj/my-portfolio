@@ -12,7 +12,7 @@ import Reveal from "./reveal";
 import TypewriterHeading from "./typewriter-heading";
 import SectionButton from "./section-button";
 
-function SocialIcon({ name }: { name: string }) {
+export function SocialIcon({ name }: { name: string }) {
   if (name === "LinkedIn") {
     return (
       <svg
