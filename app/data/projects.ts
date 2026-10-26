@@ -3,7 +3,7 @@ export const projects = [
   {
     title: "Personal Portfolio",
     url: "https://saroj-meshram-portfolio.vercel.app/",
-    githubUrl: "https://github.com/meshramsaroj/portfolio-app",
+    githubUrl: "https://github.com/meshramsaroj/my-portfolio",
     description:
       "Built a personal portfolio application where recruiters can explore my experience, skills, and projects, and ask questions through an AI chat assistant. Includes a contact form for communication and sharing opportunities, plus a downloadable resume and detailed professional background.",
     technologies: [
