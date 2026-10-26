@@ -4,7 +4,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { ArrowUpRight, Sparkles } from "lucide-react";
+import { ArrowUpRight, Bot } from "lucide-react";
 import { scrollToSection } from "@/components/portfolio/scroll-to-section";
 
 type Message = {
@@ -281,7 +281,7 @@ export default function PortfolioChat() {
             aria-label={open ? "Close portfolio assistant" : "Open portfolio assistant"}
             className="relative z-10 flex size-full items-center justify-center rounded-full bg-gradient-to-br from-purple-600 to-blue-600 text-2xl text-white shadow-xl transition hover:scale-105"
           >
-            {open ? "×" : <Sparkles className="size-6" aria-hidden="true" />}
+            {open ? "×" : <Bot className="size-6" aria-hidden="true" />}
           </button>
         </span>
       </div>
