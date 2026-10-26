@@ -186,14 +186,15 @@ export default function ProfileSection() {
               Explore my work
               <ArrowDownRight className="transition-transform group-hover:translate-x-0.5 group-hover:translate-y-0.5" />
             </SectionButton>
-            <a
-              href="/Saroj_Meshram_Resume_React_Node.pdf"
+            <Link
+              href="/Saroj_Meshram_Resume_Node_React.pdf"
               download
               className="group inline-flex h-11 items-center gap-2 rounded-full border border-slate-800 bg-slate-800 px-5 text-sm font-medium text-white transition-colors hover:border-slate-800 hover:bg-white hover:text-slate-800"
             >
               Download resume
               <Download className="size-4 transition-transform group-hover:translate-y-0.5" />
-            </a>
+            </Link>
+
           </div>
         </Reveal>
       </div>

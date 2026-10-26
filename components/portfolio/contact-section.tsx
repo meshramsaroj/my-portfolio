@@ -40,7 +40,7 @@ export default function ContactSection() {
                 I&apos;m open to exciting job opportunities, meaningful collaborations, and innovative project ideas. If you&apos;re looking for a developer to join your team, have an interesting idea to discuss, or would simply like to connect, feel free to reach out. I&apos;d love to hear from you!
               </p>
               <Link
-                href="/Saroj_Meshram_Resume_React_Node.pdf"
+                href="/Saroj_Meshram_Resume_Node_React.pdf"
                 download
                 className="group mt-7 inline-flex h-11 items-center gap-2 rounded-full border border-slate-600 bg-slate-700 px-5 text-sm font-medium text-white transition-colors hover:border-white hover:bg-white hover:text-slate-800"
               >
